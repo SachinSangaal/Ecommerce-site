@@ -1,0 +1,137 @@
+/* Reset some default styles for better consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the login page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.login-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+
+.input-container i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #222;
+    border-radius: 5px;
+    padding-left: 30px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.additional-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.image-container {
+    width: calc(33.33% - 20px); 
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.image-container p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: aqua;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+.shopping-cart-image{
+    height: auto;
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 10px;
+}
+
+.special{
+    margin-top:10px;
+    min-height: fit-content;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form{
+    width: 500px;
+    position: relative;
+    left: 35%;
+    padding: 40px;
+    border: 1px solid #000;
+}
+
+
+@media screen and (min-width: 768px) {
+    
+    main {
+        display: flex;
+        justify-content: space-between;
+    }
+    section {
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+   
+    main {
+        padding: 40px;
+    }
+}
